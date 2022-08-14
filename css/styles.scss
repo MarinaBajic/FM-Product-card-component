@@ -1,8 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+$dark-cyan: #3c8067;
+$cream: #f2ebe3;
+
+$dark-blue: #1c232b;
+$dark-gray-blue: #6c7289;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: $cream;
+    font-size: 14px;
+}
+h1, .new-price {
+    font-family: 'Fraunces', serif;
+}
+
+
+$main-width: 350px;
+$main-height: 700px;
+
+$border-radius: 1em;
+
+.main-section {
+    background: white;
+    width: $main-width;
+    height: $main-height;
+    margin: 20px auto;
+    border-radius: $border-radius;
+
+    img {
+        width: $main-width;
+        border-radius: $border-radius $border-radius 0 0;
+    }
+
+    .text {
+        margin: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .perfume {
+            color: $dark-gray-blue;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 12px;
+        }
+
+        h1 {
+            color: $dark-blue;
+            line-height: 2rem;
+            font-size: 30px;
+        }
+
+        .desc {
+            color: $dark-gray-blue;
+            line-height: 1.5rem;
+        }
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
-}
+    margin: 20px;
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    a {
+        color: hsl(228, 45%, 44%);
+    }
 }

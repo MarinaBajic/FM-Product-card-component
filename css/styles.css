@@ -1,8 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f2ebe3;
+  font-size: 14px;
+}
+
+h1, .new-price {
+  font-family: "Fraunces", serif;
+}
+
+.main-section {
+  background: white;
+  width: 350px;
+  height: 700px;
+  margin: 20px auto;
+  border-radius: 1em;
+}
+.main-section img {
+  width: 350px;
+  border-radius: 1em 1em 0 0;
+}
+.main-section .text {
+  margin: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.main-section .text .perfume {
+  color: #6c7289;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+.main-section .text h1 {
+  color: #1c232b;
+  line-height: 2rem;
+  font-size: 30px;
+}
+.main-section .text .desc {
+  color: #6c7289;
+  line-height: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 20px;
 }
-
 .attribution a {
   color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=styles.css.map */
