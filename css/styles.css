@@ -16,10 +16,18 @@ h1,
   font-family: "Fraunces", serif;
 }
 
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
 .main-section {
   background: white;
   width: 350px;
-  margin: 20px auto;
   border-radius: 1em;
 }
 .main-section img {
@@ -69,6 +77,12 @@ h1,
   background: #3c8067;
   border: 1px solid #3c8067;
   border-radius: 0.4em;
+}
+.main-section button .btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
   color: white;
   font-weight: bold;
 }
