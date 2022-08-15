@@ -11,25 +11,29 @@ $dark-gray-blue: #6c7289;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: $cream;
     font-size: 14px;
 }
-h1, .new-price {
+
+h1,
+.new-price {
     font-family: 'Fraunces', serif;
 }
 
 
 $main-width: 350px;
 $main-height: 700px;
-
+$main-margin__TB: 20px;
+$main-margin__LR: 25px;
 $border-radius: 1em;
 
 .main-section {
     background: white;
     width: $main-width;
-    height: $main-height;
+    // height: $main-height;
     margin: 20px auto;
     border-radius: $border-radius;
 
@@ -39,7 +43,7 @@ $border-radius: 1em;
     }
 
     .text {
-        margin: 20px 25px;
+        margin: $main-margin__TB $main-margin__LR;
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -54,7 +58,7 @@ $border-radius: 1em;
         h1 {
             color: $dark-blue;
             line-height: 2rem;
-            font-size: 30px;
+            font-size: 2rem;
         }
 
         .desc {
@@ -62,12 +66,41 @@ $border-radius: 1em;
             line-height: 1.5rem;
         }
     }
+
+    .prices {
+        margin: $main-margin__TB $main-margin__LR;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        .new-price {
+            color: $dark-cyan;
+            font-size: 1.7rem;
+        }
+
+        .old-price {
+            color: $dark-gray-blue;
+            text-decoration: line-through;
+            font-size: 0.7rem;
+        }
+    }
+
+    button {
+        width: calc($main-width - 2 * $main-margin__LR);
+        margin: 0 $main-margin__LR $main-margin__TB;
+        padding: 1em;
+        background: $dark-cyan;
+        border: 1px solid $dark-cyan;
+        border-radius: 0.4em;
+        color: white;
+        font-weight: bold;
+    }
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin: 20px;
+    margin: $main-margin__TB $main-margin__LR;
 
     a {
         color: hsl(228, 45%, 44%);
