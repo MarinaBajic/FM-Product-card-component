@@ -9,14 +9,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #f2ebe3;
   font-size: 14px;
-}
-
-h1,
-.new-price {
-  font-family: "Fraunces", serif;
-}
-
-main {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,52 +17,57 @@ main {
   margin: 20px 0;
 }
 
-.main-section {
+h1,
+.new-price {
+  font-family: "Fraunces", serif;
+}
+
+main {
   background: white;
   width: 350px;
   border-radius: 1em;
 }
-.main-section img {
-  width: 350px;
+main img {
+  width: 100%;
   border-radius: 1em 1em 0 0;
 }
-.main-section .text {
+main .text {
   margin: 20px 25px;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-.main-section .text .perfume {
+main .text .perfume {
   color: #6c7289;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
-.main-section .text h1 {
+main .text h1 {
   color: #1c232b;
   line-height: 2rem;
   font-size: 2rem;
 }
-.main-section .text .desc {
+main .text .desc {
   color: #6c7289;
   line-height: 1.5rem;
 }
-.main-section .prices {
+main .prices {
   margin: 20px 25px;
   display: flex;
   align-items: center;
   gap: 1em;
 }
-.main-section .prices .new-price {
+main .prices .new-price {
   color: #3c8067;
   font-size: 1.7rem;
 }
-.main-section .prices .old-price {
+main .prices .old-price {
   color: #6c7289;
   text-decoration: line-through;
   font-size: 0.7rem;
 }
-.main-section button {
+main button {
   width: 300px;
   margin: 0 25px 20px;
   padding: 1em;
@@ -78,7 +75,7 @@ main {
   border: 1px solid #3c8067;
   border-radius: 0.4em;
 }
-.main-section button .btn-text {
+main button .btn-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +83,7 @@ main {
   color: white;
   font-weight: bold;
 }
-.main-section button:hover {
+main button:hover {
   background: #173e30;
   cursor: pointer;
 }
