@@ -86,6 +86,10 @@ main {
   color: white;
   font-weight: bold;
 }
+.main-section button:hover {
+  background: #173e30;
+  cursor: pointer;
+}
 
 .attribution {
   font-size: 11px;

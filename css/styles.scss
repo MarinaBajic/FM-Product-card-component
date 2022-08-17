@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
 $dark-cyan: #3c8067;
+$darker-cyan: #173e30;
 $cream: #f2ebe3;
 
 $dark-blue: #1c232b;
@@ -107,6 +108,11 @@ main {
             gap: 0.7em;
             color: white;
             font-weight: bold;
+        }
+
+        &:hover {
+            background: $darker-cyan;
+            cursor: pointer;
         }
     }
 }
