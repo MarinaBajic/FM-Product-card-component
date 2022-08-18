@@ -31,9 +31,12 @@ h1,
     font-family: 'Fraunces', serif;
 }
 
+img.desktop {
+    display: none;
+}
+
 
 $main-width: 350px;
-$main-height: 700px;
 $main-margin__TB: 20px;
 $main-margin__LR: 25px;
 $border-radius: 1em;
@@ -48,10 +51,11 @@ main {
         border-radius: $border-radius $border-radius 0 0;
     }
 
-    .text {
+    section {
         margin: $main-margin__TB $main-margin__LR;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 1em;
 
         .perfume {
@@ -74,7 +78,6 @@ main {
     }
 
     .prices {
-        margin: $main-margin__TB $main-margin__LR;
         display: flex;
         align-items: center;
         gap: 1em;
@@ -93,11 +96,10 @@ main {
 
     button {
         width: calc($main-width - 2 * $main-margin__LR);
-        margin: 0 $main-margin__LR $main-margin__TB;
         padding: 1em;
         background: $dark-cyan;
         border: 1px solid $dark-cyan;
-        border-radius: 0.4em;
+        border-radius: 0.5em;
 
         .btn-text {
             display: flex;
@@ -125,4 +127,35 @@ main {
     }
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    $main-width-desktop: 600px;
+    $main-margin__TB-desktop: 30px;
+    $main-margin__LR-desktop: 35px;
+
+    img.mobile {
+        display: none;
+    }
+
+    img.desktop {
+        display: unset;
+        // flex-shrink: 0;
+        // width: 50%;
+        height: 100%;
+        border-radius: $border-radius 0 0 $border-radius;
+    }
+
+    main {
+        width: $main-width-desktop;
+        display: flex;
+
+        section {
+            margin: $main-margin__TB-desktop $main-margin__LR-desktop;
+            width: 50%;
+            // justify-content: space-between;
+        }
+
+        button {
+            width: calc($main-width-desktop/2 - 2 * $main-margin__LR-desktop);
+        }
+    }
+}

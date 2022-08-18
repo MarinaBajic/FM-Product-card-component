@@ -22,6 +22,10 @@ h1,
   font-family: "Fraunces", serif;
 }
 
+img.desktop {
+  display: none;
+}
+
 main {
   background: white;
   width: 350px;
@@ -31,29 +35,29 @@ main img {
   width: 100%;
   border-radius: 1em 1em 0 0;
 }
-main .text {
+main section {
   margin: 20px 25px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1em;
 }
-main .text .perfume {
+main section .perfume {
   color: #6c7289;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 0.7rem;
 }
-main .text h1 {
+main section h1 {
   color: #1c232b;
   line-height: 2rem;
   font-size: 2rem;
 }
-main .text .desc {
+main section .desc {
   color: #6c7289;
   line-height: 1.5rem;
 }
 main .prices {
-  margin: 20px 25px;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -69,11 +73,10 @@ main .prices .old-price {
 }
 main button {
   width: 300px;
-  margin: 0 25px 20px;
   padding: 1em;
   background: #3c8067;
   border: 1px solid #3c8067;
-  border-radius: 0.4em;
+  border-radius: 0.5em;
 }
 main button .btn-text {
   display: flex;
@@ -95,4 +98,26 @@ main button:hover {
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  img.mobile {
+    display: none;
+  }
+  img.desktop {
+    display: unset;
+    height: 100%;
+    border-radius: 1em 0 0 1em;
+  }
+  main {
+    width: 600px;
+    display: flex;
+  }
+  main section {
+    margin: 30px 35px;
+    width: 50%;
+  }
+  main button {
+    width: 230px;
+  }
 }/*# sourceMappingURL=styles.css.map */
