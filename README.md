@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io/solutions](https://www.frontendmentor.io/solutions/responsive-mobilefirst-solution-using-flex-xO3rRsfda2)
 - Live Site URL: [frontend-mentor-product-preview-card-component-marinabajic.vercel.app](https://frontend-mentor-product-preview-card-component-marinabajic.vercel.app/)
 
 ## My process
