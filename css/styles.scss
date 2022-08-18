@@ -17,13 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: $cream;
     font-size: 14px;
-
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
 }
 
 h1,
@@ -40,6 +33,15 @@ $main-width: 350px;
 $main-margin__TB: 20px;
 $main-margin__LR: 25px;
 $border-radius: 1em;
+
+.everything {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
 
 main {
     background: white;
@@ -101,14 +103,11 @@ main {
         border: 1px solid $dark-cyan;
         border-radius: 0.5em;
 
-        .btn-text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.7em;
-            color: white;
-            font-weight: bold;
-        }
+        display: flex;
+        justify-content: center;
+        gap: 0.7em;
+        color: white;
+        font-weight: bold;
 
         &:hover {
             background: $darker-cyan;
@@ -138,8 +137,6 @@ main {
 
     img.desktop {
         display: unset;
-        // flex-shrink: 0;
-        // width: 50%;
         height: 100%;
         border-radius: $border-radius 0 0 $border-radius;
     }
@@ -151,7 +148,6 @@ main {
         section {
             margin: $main-margin__TB-desktop $main-margin__LR-desktop;
             width: 50%;
-            // justify-content: space-between;
         }
 
         button {

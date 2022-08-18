@@ -9,12 +9,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #f2ebe3;
   font-size: 14px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
 }
 
 h1,
@@ -24,6 +18,15 @@ h1,
 
 img.desktop {
   display: none;
+}
+
+.everything {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 main {
@@ -77,11 +80,8 @@ main button {
   background: #3c8067;
   border: 1px solid #3c8067;
   border-radius: 0.5em;
-}
-main button .btn-text {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 0.7em;
   color: white;
   font-weight: bold;
